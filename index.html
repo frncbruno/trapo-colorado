@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trapo Colorado</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Bebas+Neue&family=Permanent+Marker&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <img src="assets/escudo-internacional.png" alt="Escudo do Internacional" class="topbar__crest">
+  <div>
+    <h1>Gerador de Trapos do Colorado</h1>
+    <p>Monte o trapo, ajuste formato, linhas, fontes e cores, baixe em PNG.</p>
+  </div>
+</header>
+
+<main class="layout">
+
+  <section class="panel" aria-label="Controles">
+    <div class="field">
+      <label for="format">Formato</label>
+      <select id="format">
+        <option value="quadrada" selected>Quadrada</option>
+        <option value="retangular">Retangular</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label for="lineCount">Quantidade de linhas</label>
+      <select id="lineCount">
+        <option value="1">1 linha</option>
+        <option value="2">2 linhas</option>
+        <option value="3" selected>3 linhas</option>
+      </select>
+    </div>
+
+    <div id="lineControls"></div>
+
+    <button id="downloadBtn" class="btn-download">Baixar PNG</button>
+  </section>
+
+  <section class="stage" aria-label="Pré-visualização">
+    <div id="banner" class="banner"></div>
+  </section>
+
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
