@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trapo Colorado</title>
+<meta name="description" content="Monte seu trapo do Colorado, ajuste cores, fontes e formatos e baixe em PNG.">
+<link rel="canonical" href="https://frncbruno.github.io/trapo-colorado/">
+<link rel="icon" type="image/png" href="assets/logo-trapo-colorado.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://frncbruno.github.io/trapo-colorado/">
+<meta property="og:title" content="Gerador de Trapos do Colorado">
+<meta property="og:description" content="Monte seu trapo do Colorado com suas frases, cores e fontes.">
+<meta property="og:image" content="https://frncbruno.github.io/trapo-colorado/assets/logo-trapo-colorado.png">
+<meta property="og:image:alt" content="Logo do Trapo Colorado">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Gerador de Trapos do Colorado">
+<meta name="twitter:description" content="Monte seu trapo do Colorado com suas frases, cores e fontes.">
+<meta name="twitter:image" content="https://frncbruno.github.io/trapo-colorado/assets/logo-trapo-colorado.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Bebas+Neue&family=Permanent+Marker&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <img src="assets/escudo-internacional.png" alt="Escudo do Internacional" class="topbar__crest">
+  <div>
+    <h1>Gerador de Trapos do Colorado</h1>
+    <p>Monte o trapo, ajuste formato, linhas, fontes e cores, baixe em PNG.</p>
+  </div>
+  <a class="github-link" href="https://github.com/frncbruno" target="_blank" rel="noopener noreferrer" aria-label="Abrir GitHub de Bruno">
+    <svg class="github-link__icon" viewBox="0 0 24 24" aria-hidden="true">
+      <path fill="currentColor" d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.05c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.74.08-.74 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.49.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.93 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.6-2.8 5.62-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.57A12 12 0 0 0 12 .5Z"/>
+    </svg>
+    <span>github.com/frncbruno</span>
+  </a>
+</header>
+
+<main class="layout">
+
+  <section class="panel" aria-label="Controles">
+    <div class="field">
+      <label for="format">Formato</label>
+      <select id="format">
+        <option value="quadrada" selected>Quadrada</option>
+        <option value="retangular">Retangular</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label for="lineCount">Quantidade de linhas</label>
+      <select id="lineCount">
+        <option value="1">1 linha</option>
+        <option value="2">2 linhas</option>
+        <option value="3" selected>3 linhas</option>
+      </select>
+    </div>
+
+    <div id="lineControls"></div>
+
+    <button id="downloadBtn" class="btn-download">Baixar PNG</button>
+  </section>
+
+  <section class="stage" aria-label="Pré-visualização">
+    <div id="banner" class="banner"></div>
+  </section>
+
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
