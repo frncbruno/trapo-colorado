@@ -22,16 +22,17 @@
 <meta name="twitter:image" content="https://trapo-colorado.vercel.app/assets/logo-trapo-colorado-500.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Bebas+Neue&family=Permanent+Marker&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Bangers&family=Bebas+Neue&family=Comic+Neue:wght@400;700&family=Manrope:wght@400;600;800&family=Permanent+Marker&family=Press+Start+2P&family=Rock+Salt&family=Rubik+Mono+One&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="topbar">
   <img src="assets/logo-trapo-colorado-500.png" alt="Logo do Trapo Colorado" class="topbar__crest">
-  <div>
-    <h1>Gerador de Trapos do Colorado</h1>
-    <p>Monte o trapo, ajuste formato, linhas, fontes e cores, baixe em PNG.</p>
+  <div class="topbar__intro">
+    <div class="eyebrow">TRAPO COLORADO</div>
+    <h1>Faça barulho<br><em>com seus trapos!</em></h1>
+    <p>Monte sua faixa. Escolha o clima. Baixe e leve para o jogo.</p>
   </div>
   <a class="github-link" href="https://github.com/frncbruno" target="_blank" rel="noopener noreferrer" aria-label="Abrir GitHub de Bruno">
     <svg class="github-link__icon" viewBox="0 0 24 24" aria-hidden="true">
@@ -59,6 +60,11 @@
         <option value="2">2 linhas</option>
         <option value="3" selected>3 linhas</option>
       </select>
+    </div>
+
+    <div class="presets" aria-labelledby="presets-title">
+      <div id="presets-title" class="field-label">Estilos rápidos</div>
+      <div id="presetControls" class="preset-grid"></div>
     </div>
 
     <div id="lineControls"></div>
