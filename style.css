@@ -105,14 +105,33 @@ body{
 
 @media (max-width: 560px){
   .topbar{
-    align-items: flex-start;
-    flex-wrap: wrap;
+    align-items: center;
+    display: grid;
+    gap: 0 12px;
+    grid-template-columns: 40px 1fr;
+    padding: 24px;
+  }
+
+  .topbar__crest{
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .topbar__intro{
+    grid-column: 1 / -1;
+    grid-row: 2;
+    margin-top: 20px;
   }
 
   .github-link{
-    margin-left: 64px;
-    margin-top: -4px;
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+    margin: 0;
   }
+
+  .topbar h1{ font-size: clamp(28px, 7.2vw, 34px); }
+  .topbar p{ max-width: 280px; }
 }
 
 .panel{
@@ -358,8 +377,5 @@ body{
 }
 
 @media (max-width: 560px){
-  .topbar{ padding-top: 24px; }
-  .topbar h1{ font-size: 36px; }
-  .topbar__crest{ width: 40px; height: 40px; }
   .stage{ min-height: 360px; padding-inline: 0; }
 }
